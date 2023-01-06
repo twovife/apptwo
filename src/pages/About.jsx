@@ -56,7 +56,8 @@ const About = () => {
       onAnimationComplete={() => setCanScroll(true)}
       className="w-screen h-screen flex flex-col justify-end relative bg-main"
       initial="hidden"
-      animate="show">
+      animate="show"
+      exit={{ opacity: 0 }}>
       <motion.div className="p-3" initial={{ opacity: 0, y: "100%" }} animate={{ opacity: 1, y: 0, transition: { delay: 1.2 } }}>
         <motion.div
           initial={{ opacity: 0 }}

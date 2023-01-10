@@ -81,7 +81,7 @@ const About = () => {
       <motion.div
         className="mx-auto overflow-hidden"
         initial={{
-          y: "-50%",
+          y: -window.innerHeight * 0.5 + 140,
           width: "200px",
           height: "280px",
         }}
